@@ -1,7 +1,9 @@
-$('.nav-toggle').click(function(e) {
-  
-    e.preventDefault();
-    $("html").toggleClass("openNav");
-    $(".nav-toggle").toggleClass("active");
-  
-});
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.querySelector('nav');
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        nav.classList.toggle('active');
+    });
+
